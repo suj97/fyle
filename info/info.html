@@ -3,16 +3,18 @@
 </div>
 
 <div ng-if="details.Response==='True'">
-  <img ng-src="{{ details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : details.Poster }}" class="thumbnail animated flip movie-poster">
-  <p>Title : {{ details.Title }}</p>
-  <p>Year : {{ details.Year }}</p>
-  <p>Released : {{ details.Released }}</p>
-  <p>Runtime : {{ details.Runtime }}</p>
-  <p>Plot : {{ details.Plot }}</p>
-  <p>Director : {{ details.Director }}</p>
-  <p>Actors : {{ details.Actors }}</p>
-  <p>Genre : {{ details.Genre }}</p>
-  <p>IMDB : {{ details.imdbRating }}</p>
+  <div class="col-md-3">
+  <img ng-src="{{ details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : details.Poster }}" class="thumbnail animated flip movie-poster img-responsive"></div>
+  <div class="col-md-5 space">
+  <p><h3> {{ details.Title }}, {{ details.Year }}</h3></p>
+  <p><b> Released :</b> {{ details.Released }}</p>
+  <p><b>Runtime :</b> {{ details.Runtime }}</p>
+  <p><b>Plot :</b> {{ details.Plot }}</p>
+  <p><b> Director :</b> {{ details.Director }}</p>
+  <p><b>Actors :</b> {{ details.Actors }}</p>
+  <p><b>Genre :</b> {{ details.Genre }}</p>
+  <p><b>IMDB :</b> {{ details.imdbRating }}</p>
+  </div>
 </div>
 
 <div ng-if="details.Response==='False'">

@@ -1,13 +1,12 @@
 <div ng-if="related.Response!=='False'">
-  Related Results:<hr>
-
-  <ul class="rel-results">
-    <li ng-repeat="movie in related.Search">
-      <a href="#" ng-click="update(movie)">{{ movie.Title }}</a>, {{ movie.Year }}
-    </li>
-  </ul>
+    <h4 >Related Results:</h4>
+    <hr>
+    <ul class="rel-results">
+        <li ng-repeat="movie in related.Search">
+            <a href="#" ng-click="update(movie)">{{ movie.Title }}</a>, {{ movie.Year }}
+        </li>
+    </ul>
 </div>
-
 <div ng-if="related.Response==='False'">
-  No related results found.
+    No related results found.
 </div>

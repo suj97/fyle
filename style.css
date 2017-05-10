@@ -1,0 +1,25 @@
+body {
+  background: url(../images/bg-sky.png);
+  background-repeat: repeat !important;
+  background-attachment: fixed;
+}
+
+ul.rel-results {
+  list-style-type:circle;
+}
+.heading {
+  color:#fcb150;
+}
+
+.a1 {
+  color: #337ab7;
+  font-size: 25px;
+}
+
+.btn-style {
+  background-color:#337ab7; 
+}
+
+.space {
+  margin-top: 15px;
+}
