@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" ng-controller="MovieController">
+  <body>
+    <div>
+          <p>Search by</p>
+          <p> Movie name : <input type="text" ng-keyup="$event.keyCode == 13 ? search = moviename : null" ng-model="moviename" ng-click="select($event)" class="form-control" size="25" placeholder="Eg: Shawshank Redemption" autofocus /> <button ng-click="search = moviename">Search</button> </p>
+        </div>
+
+        <div ng-include="'info/info.html'" class="col-md-8"></div>
+
+        <div ng-include="'info/related.html'" class="col-md-4"></div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
